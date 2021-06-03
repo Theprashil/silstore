@@ -1,19 +1,20 @@
+import Modal from "../Modals/Modal";
 import classes from "./Cart.module.css";
-import CartIcon from "./CartIcon";
-import { useContext } from "react";
-import { CartContext } from "../Contexts/cart-context";
 
-function Cart() {
-  const [cart, setCart] = useContext(CartContext);
-  // const totalPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
+function Cart(props) {
   return (
-    <button className={classes.btn}>
-      <span className={classes.icon}>
-        <CartIcon />
-      </span>
-      <span className={classes.text}>Your Cart</span>
-      <span className={classes.badge}>{cart.length}</span>
-    </button>
+    <Modal onClick={props.onClose}>
+      <div className={classes.total}>
+        <span>Total Amount</span>
+        <span>$23.45</span>
+      </div>
+      <div className={classes.actions}>
+        <button onClick={props.onClose} className={classes.close}>
+          Close
+        </button>
+        <button className={classes.order}>Order</button>
+      </div>
+    </Modal>
   );
 }
 

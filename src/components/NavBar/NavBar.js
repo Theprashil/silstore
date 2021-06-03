@@ -1,7 +1,7 @@
-import Cart from "../Cart/Cart";
 import classes from "./NavBar.module.css";
+import HeaderCartButton from "./HeaderCartButton";
 
-function NavBar() {
+function NavBar(props) {
   return (
     <nav>
       <div className={classes.logo}>Sil Store</div>
@@ -18,7 +18,7 @@ function NavBar() {
         </li>
       </ul>
 
-      <Cart />
+      <HeaderCartButton onShow={props.onShow} />
     </nav>
   );
 }

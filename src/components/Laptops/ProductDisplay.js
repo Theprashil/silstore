@@ -8,21 +8,8 @@ import {
 } from "@material-ui/core";
 import { AddShoppingCart } from "@material-ui/icons";
 import useStyles from "./CardsStyle";
-import { CartContext } from "../Contexts/cart-context";
-import { useContext } from "react";
 
 function ProductDisplay({ product }) {
-  const [cart, setCart] = useContext(CartContext);
-
-  function buttonClickHandler() {
-    const laptops = {
-      name: product.name,
-      price: product.price,
-    };
-    setCart((currState) => [...currState, laptops]);
-    console.log("Button clicked");
-  }
-
   const classes = useStyles();
   return (
     <Card className={classes.root}>
@@ -49,7 +36,7 @@ function ProductDisplay({ product }) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing className={classes.cardActions}>
-        <IconButton onClick={buttonClickHandler} aria-label="Add to Cart">
+        <IconButton aria-label="Add to Cart">
           <AddShoppingCart />
         </IconButton>
       </CardActions>
