@@ -1,7 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-import ProductList from "./components/Laptops/ProductList";
-import { CartProvider } from "./components/Contexts/cart-context";
+import ProductIterate from "./components/Laptops/ProductIterate";
 import Cart from "./components/Cart/Cart";
 import { useState } from "react";
 
@@ -16,15 +15,15 @@ function App() {
   };
 
   return (
-    <CartProvider>
+    <>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <header>
         <NavBar onShow={showCartHandler} />
       </header>
       <section>
-        <ProductList />
+        <ProductIterate />
       </section>
-    </CartProvider>
+    </>
   );
 }
 
