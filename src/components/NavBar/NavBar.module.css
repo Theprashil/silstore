@@ -23,17 +23,12 @@ nav {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Styling Links */
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: white;
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.1rem;
+    margin-left: 1rem;
+  }
+  .headerbtn {
+    display: none;
+  }
 }

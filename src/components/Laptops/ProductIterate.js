@@ -21,8 +21,8 @@ function ProductList() {
       item
       key={p.id}
       xs={12}
-      sm={6}
-      md={3}
+      sm={7}
+      md={6}
       lg={4}
     >
       <ProductDisplay
