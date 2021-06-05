@@ -14,7 +14,7 @@ export default makeStyles(() => ({
   },
 
   media: {
-    height: "200px",
+    height: "210px",
     width: "100%",
     objectFit: "contain",
     paddingBottom: "1rem !important",

@@ -2,51 +2,65 @@ import { useReducer } from "react";
 import CartContext from "./cart-context";
 import Reducer from "./Reducer";
 
+//Importing Images
+import artifact from "../assets/artifact-pro.png";
+import inspiron1 from "../assets/inspiron1.webp";
+import zenbook from "../assets/zenbook.png";
+import acer from "../assets/acer.png";
+import chromebook from "../assets/chromebook.webp";
+import slimlenovo from "../assets/slimlenovo.webp";
+
 export default function GlobalState(props) {
   const [state, dispatch] = useReducer(Reducer, { carts: [] });
 
   const products = [
     {
       id: 1,
-      name: "Ripple Pandora",
-      description: "A perfect made in Nepal",
-      price: 800,
-      img: "https://images.freeimages.com/images/large-previews/ac0/cat-1364386.jpg",
+      name: "Asus Zenbook Pro",
+      description:
+        "A professional grade thin and light laptop that combines unprecedented performance with unrivalled style ",
+      price: 1600,
+      img: zenbook,
     },
     {
       id: 2,
-      name: "Dell 3300",
-      description: "Value for money",
-      price: 1600,
-      img: "https://images.freeimages.com/images/large-previews/ac0/cat-1364386.jpg",
+      name: "Acer Swift 3",
+      description:
+        "Perform at your very best with the Swift 3, the absolute device for accomplishing all you need on the move",
+      price: 1900,
+      img: acer,
     },
     {
       id: 3,
-      name: "Hp 1234",
-      description: "Won't let you down",
-      price: 1900,
-      img: "https://images.freeimages.com/images/large-previews/ac0/cat-1364386.jpg",
+      name: "Dell Inspiron",
+      description:
+        "Whether it's social media, streaming movies, or finishing your work, Inspiron delivers what matters most to you, in style",
+      price: 1200,
+      img: inspiron1,
     },
     {
       id: 4,
-      name: "Riplle Raze",
-      description: "Good speed good money",
-      price: 1600,
-      img: "https://images.freeimages.com/images/large-previews/ac0/cat-1364386.jpg",
+      name: "Lenovo Chromebook 3 ",
+      description:
+        "A versatile laptop featuring a unique design with optional touchscreen display",
+      price: 900,
+      img: chromebook,
     },
     {
       id: 5,
-      name: "Apple Macbook",
-      description: "Very Expensive but worth it",
-      price: 3600,
-      img: "https://images.freeimages.com/images/large-previews/ac0/cat-1364386.jpg",
+      name: "Ripple Artifact Pro",
+      description:
+        "Artifact Pro is a one-stop gaming PC that meets all of your gaming requirements",
+      price: 1800,
+      img: artifact,
     },
     {
       id: 6,
-      name: "Vostro Peice",
-      description: "Great performance",
-      price: 1700,
-      img: "https://images.freeimages.com/images/large-previews/ac0/cat-1364386.jpg",
+      name: "Lenovo Slim 9i",
+      description:
+        "Introducing the perfect combination of performance, responsiveness, battery life, and stunning visuals in a new class of sleek, stylish laptops",
+      price: 1600,
+      img: slimlenovo,
     },
   ];
 

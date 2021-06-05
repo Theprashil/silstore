@@ -7,11 +7,10 @@ function HeaderCartButton(props) {
   return (
     <>
       <button className={classes.btn} onClick={props.onShow}>
+        <span className={classes.badge}>{context.carts.length} Item</span>
         <span className={classes.icon}>
           <HeaderCartIcon />
         </span>
-        <span className={classes.text}>Your Cart</span>
-        <span className={classes.badge}>{context.carts.length}</span>
       </button>
     </>
   );

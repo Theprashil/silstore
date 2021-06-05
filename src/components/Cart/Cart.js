@@ -44,7 +44,7 @@ function Cart(props) {
           </div>
           <div className={classes.actions}>
             <button onClick={clearCartHandler}> Clear Cart</button>
-            <button className={classes.order}>Order</button>
+            <button className={classes.order}>Checkout</button>
           </div>
         </Modal>
       ) : (
