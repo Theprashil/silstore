@@ -28,7 +28,7 @@ function ProductDisplay({ addProductToCart, ...props }) {
             {props.name}
           </Typography>
           <Typography className={classes.price} variant="h6">
-            {props.price}
+            ${props.price}
           </Typography>
         </div>
         <Typography

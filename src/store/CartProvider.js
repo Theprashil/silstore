@@ -78,6 +78,7 @@ export default function GlobalState(props) {
       value={{
         products: products,
         carts: state.carts,
+        totalAmount: state.totalAmount,
         addProductToCart: addProductToCart,
         removeProductFromCart: removeProductFromCart,
         clearCart: clearCart,

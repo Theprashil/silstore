@@ -1,7 +1,6 @@
 const addProductToCart = (state, product) => {
   const copy = [...state.carts];
   const curItemIndex = copy.findIndex((i) => i.product.id === product.id);
-
   if (curItemIndex < 0) {
     copy.push({ product, quantity: 1 });
   } else {
