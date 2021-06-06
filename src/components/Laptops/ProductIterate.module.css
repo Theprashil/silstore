@@ -1,0 +1,10 @@
+.grid {
+  max-width: 100%;
+  padding: 2rem 6.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    padding: 3rem 2rem;
+  }
+}
